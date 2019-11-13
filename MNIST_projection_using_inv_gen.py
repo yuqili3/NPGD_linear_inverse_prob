@@ -181,9 +181,9 @@ testloader = torch.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle
 if task == 'cs':
     task_name = 'compressed_sensing'
     if use_designed_mat:
-        A = torch.load("%s/MNIST_DCGAN_results_%d/stiefelFromG_A_m%d.pkl"%(model_dir,k,m));
-    else:
         # load learned A with ON rows, s.t. aligns best with G(z)
+        A = torch.load("%s/MNIST_DCGAN_results_%d/designed_matrix_A_m%d.pkl"%(model_dir,k,m));
+    else:
         A = np.random.normal(scale = np.sqrt(1/m), size=(m,1,28,28))
         A = torch.from_numpy(A).float();
 elif task == 'ip':
