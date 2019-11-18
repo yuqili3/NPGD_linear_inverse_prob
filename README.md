@@ -1,4 +1,4 @@
-# NPGD_linear_inverse_prob
+#  GAN-based Projector for Faster Recovery with Convergence Guarantees in Linear Inverse Problems.
 This repository provides code for this paper: [GAN-based Projector for Faster Recovery with Convergence Guarantees in Linear Inverse Problems](https://arxiv.org/abs/1902.09698). 
 
 ## Requirements
